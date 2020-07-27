@@ -11,8 +11,8 @@ React
 Type the following into the command line in the project's root folder:
 
 ```npm install @material-ui/core```
-```npm install @material-ui/icon```
-```npm install --save react-timer-hook```
+<br>```npm install @material-ui/icon```
+<br>```npm install --save react-timer-hook```
 
 ## MVP (Minimum Viable Product)
 
