@@ -1,8 +1,8 @@
-import React from 'react';
-import Header from './components/Header'
-import Main from './components/main'
-import Footer from './components/Footer'
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import Main from "./components/main";
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   return (
@@ -10,7 +10,6 @@ function App() {
       <Header />
       <Main />
       <Footer />
-
     </div>
   );
 }
