@@ -24,7 +24,19 @@ const Timer = ({ cups, setCups }) => {
           </button>
         </div>
       ) : (
+          <div style={{ textAlign: "center" }}>
         <div style={{ fontSize: "25px" }}>Stay Thirsty My Friend!</div>
+        <button
+            onClick={() => {
+              const time = new Date();
+              time.setSeconds(time.getSeconds() + 1800);
+              restart(time);
+              setCups(0);
+            }}
+          >
+            Reset
+          </button>
+</div>
       )}
     </div>
   );
