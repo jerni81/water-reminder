@@ -15,7 +15,7 @@ const Timer = ({ cups, setCups }) => {
           <button
             onClick={() => {
               const time = new Date();
-              time.setSeconds(time.getSeconds() + 5);
+              time.setSeconds(time.getSeconds() + 1800);
               restart(time);
               setCups(cups + 1);
             }}
