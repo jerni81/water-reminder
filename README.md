@@ -1,6 +1,9 @@
 ## Description 
 This is a simple React app, to help the user remember to drink more water. This App was made to run in the background and every 30 minutes to popup a hydration reminder.
 
+## Deployment
+http://new-water.surge.sh/
+
 ## Technologies Used
 
 React
