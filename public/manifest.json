@@ -1,26 +1,26 @@
 {
-  "name": "Water-Reminder",
-  "short_name": "your-app-name",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
-      {
-          "src": "logo512.png",
-          "sizes": "92x92",
-          "type": "image/png"
-      },
-      {
-          "src": "logo512.png",
-          "sizes": "144x144",
-          "type": "image/png"
-      },
-      {
-          "src": "logo512.png",
-          "sizes": "152x152",
-          "type": "image/png"
-      }        
+    {
+      "src": "water_glass.png",
+      "type": "image/png",
+      "sizes": "288x288"
+    },
+    {
+      "src": "/safari-pinned-tab.svg",
+      "type": "image/svg",
+      "size": "288x288",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "water_glass.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
   ],
   "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#f0f2f5",
-  "theme_color": "#96f2d7"
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
