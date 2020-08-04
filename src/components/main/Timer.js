@@ -1,9 +1,10 @@
 import React from "react";
 import { useTimer } from "react-timer-hook";
 
-const Timer = ({ cups, setCups }) => {
+const Timer = ({ cups, setCups, showNotification }) => {
+
   const { seconds, minutes, restart } = useTimer({
-    onExpire: () => alert("DRINK WATER!"),
+    onExpire: () => showNotification("Its been 30 minutes since your last drink", "Drink Up")
   });
   return (
     <div className="card">
