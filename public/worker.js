@@ -1,7 +1,6 @@
 let CACHE_NAME = 'Water-Reminder';
 let urlsToCache = [
-  '/',
-  '/completed'
+  '/'
 ];
 
 // Install a service worker
