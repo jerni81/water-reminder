@@ -8,18 +8,31 @@ function App() {
 
   Notification.requestPermission(result => {
     if (result === 'granted') {
-      showNotification('So nice to have you here!', 'Hey there!')
+      showNotification('Thirsty kids!?!?', 'How bout a Drink')
     }
   });
   
-  const showNotification = (title, message) => {
-    console.log("shwNoto");
-    
+  const showNotificationReq = (title, message) => {
     if ('Notification' in window) {
       navigator.serviceWorker.ready.then(registration => {
-        registration.showNotification(title, {
+        registration.showNotification( title, {
           body: message,
-          tag: 'vibration-sample'
+          icon: '../public/favicon.ico',
+          requireInteraction: true,
+          tag: 'require-interaction'
+        });
+      }).catch(err => console.log("err in notification: ", err)
+        )
+    }
+  }
+
+  const showNotification = (title, message) => {
+    if ('Notification' in window) {
+      navigator.serviceWorker.ready.then(registration => {
+        registration.showNotification( title, {
+          body: message,
+          icon: '../public/favicon.ico',
+          tag: 'no-require-interaction'
         });
       }).catch(err => console.log("err in notification: ", err)
         )
@@ -29,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Main showNotification={showNotification}/>
+      <Main showNotification={showNotificationReq}/>
       <Footer />
     </div>
   );

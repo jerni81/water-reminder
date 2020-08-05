@@ -4,7 +4,7 @@ import { useTimer } from "react-timer-hook";
 const Timer = ({ cups, setCups, showNotification }) => {
 
   const { seconds, minutes, restart } = useTimer({
-    onExpire: () => showNotification(cups <= 4 ?`You've only had ${cups} today` : `Alright ${cups} cups today!`, `${8 - cups} to go!`)
+    onExpire: () => showNotification("Time to drink", cups <= 4 ?`You've only had ${cups} today, ${8 - cups} to go!` : `Alright ${cups} cups today, ${8 - cups} to go!!`)
   });
   return (
     <div className="card">
