@@ -21,7 +21,8 @@ function App() {
           body: message,
           tag: 'vibration-sample'
         });
-      });
+      }).catch(err => console.log("err in notification: ", err)
+        )
     }
   }
 
