@@ -17,7 +17,6 @@ function App() {
       navigator.serviceWorker.ready.then(registration => {
         registration.showNotification( title, {
           body: message,
-          icon: '../public/favicon.ico',
           requireInteraction: true,
           tag: 'require-interaction'
         });
@@ -31,7 +30,6 @@ function App() {
       navigator.serviceWorker.ready.then(registration => {
         registration.showNotification( title, {
           body: message,
-          icon: '../public/favicon.ico',
           tag: 'no-require-interaction'
         });
       }).catch(err => console.log("err in notification: ", err)
